@@ -1,0 +1,67 @@
+ul {
+    list-style-type: none;
+}
+
+.item {
+    position: relative;
+    display: flex;
+}
+
+.message {
+    display: flex;
+    flex-direction: column; 
+    flex-flow: column; 
+    justify-content: center;
+}
+
+.item .theDate {
+    color: darkred;
+    font-size: 12px;
+    font-variant: small-caps;
+}
+
+.item .avatar {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    background-color: #EEE;
+}
+
+.item .avatar img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.item .email {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 120px;
+    top:0;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .item .email::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .item:hover .email {
+    visibility: visible;
+    opacity: 1;
+  }
