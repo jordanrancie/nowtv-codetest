@@ -24,7 +24,7 @@ export class MessageComponent extends React.Component {
         {member ? (
           <div>
             <div className="avatar">
-              <img src={member.avatar} />
+              <img src={member.avatar} alt="" />
             </div>
             <span className={"email " + (this.state.hover ? "show" : "")}>{member.email}</span>
           </div>
