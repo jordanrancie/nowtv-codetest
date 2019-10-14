@@ -1,6 +1,6 @@
 import { MEMBERS_LOADED } from '../action-creators/action-types';
 
-export default (state = [], action) => {
+export default (state = {}, action) => {
   // Convert array to key/map object.
   const arrayToMap = array =>
     array.reduce((indexed, member) => {

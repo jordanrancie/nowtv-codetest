@@ -61,7 +61,7 @@ ul {
     border-color: #555 transparent transparent transparent;
   }
   
-  .item:hover .email {
+  .item .show {
     visibility: visible;
     opacity: 1;
   }

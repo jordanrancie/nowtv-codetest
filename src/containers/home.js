@@ -37,7 +37,7 @@ const mapDispatchToProps = dispatch => bindActionCreators({ loadMessages, loadMe
 
 Home.propTypes = {
   messages: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  members: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  members: PropTypes.object,
   loadMessages: PropTypes.func,
   loadMembers: PropTypes.func,
 };
